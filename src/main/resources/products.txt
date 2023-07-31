@@ -1,0 +1,6 @@
+eggs
+butter
+milk
+tomato
+bread
+cottage cheese

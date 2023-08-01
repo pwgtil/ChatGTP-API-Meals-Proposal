@@ -12,7 +12,7 @@ public class ChatGPTManager {
     OpenAiService openAiService;
 
     public ChatGPTManager() {
-        openAiService = new OpenAiService("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", Duration.ofSeconds(60L));
+        openAiService = new OpenAiService("OPENAI_KEY", Duration.ofSeconds(60L));
     }
 
     private String askChatGPT(String question) {
@@ -33,7 +33,7 @@ public class ChatGPTManager {
                 .map(ChatMessage::getContent)
                 .forEach(stringBuilder::append);
 
-        return stringBuilder.toString();//new StringBuilder().append("ChatGPT propose the following three options:").append(() -> "test")//String.join()
+        return stringBuilder.toString();
     }
 
     public String getBreakfastProposal(List<String> productsList) {
